@@ -41,6 +41,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static gregification.modules.exnihilo.ExNihiloModule.gtPebble;
+
 public class SieveDrops implements ISieveDefaultRegistryProvider {
 
     private static Map<SieveDropType, List<SieveDrop>> SIEVE_DROPS_MAP = new HashMap<>();
@@ -136,9 +138,14 @@ public class SieveDrops implements ISieveDefaultRegistryProvider {
             registry.register("dirt", new ItemInfo(Items.PUMPKIN_SEEDS), 0.35f, BlockSieve.MeshType.STRING.getID());
             registry.register("dirt", new ItemInfo(ModItems.resources, 3), 0.05f, BlockSieve.MeshType.STRING.getID());
             registry.register("dirt", new ItemInfo(ModItems.resources, 4), 0.05f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(gtPebble.setMaxDamage(0).getDefaultInstance()), 0.5f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(gtPebble.setMaxDamage(1).getDefaultInstance()), 0.5f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(gtPebble.setMaxDamage(2).getDefaultInstance()), 0.5f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(gtPebble.setMaxDamage(3).getDefaultInstance()), 0.5f, BlockSieve.MeshType.STRING.getID());
             for (ItemSeedBase seed : ModItems.itemSeeds) {
                 registry.register("dirt", new ItemInfo(seed), 0.05f, BlockSieve.MeshType.STRING.getID());
             }
+            registry.register("dirt", new ItemInfo(ModItems.rubberSeed), 0.05f, BlockSieve.MeshType.STRING.getID());
             registry.register("dust", new ItemInfo(Items.DYE, 15), 0.1f, BlockSieve.MeshType.STRING.getID());
             registry.register("dust", new ItemInfo(Items.GLOWSTONE_DUST), 0.025f, BlockSieve.MeshType.IRON.getID());
             registry.register("dust", new ItemInfo(Items.BLAZE_POWDER), 0.037f, BlockSieve.MeshType.IRON.getID());

@@ -18,8 +18,8 @@ public class MeshRecipes {
     public static void init() {
         if (ExNihiloConfig.harderMeshes) {
             ModHandler.removeRecipeByName("exnihilocreatio:item_mesh_2");
-            ModHandler.addShapedRecipe("tin_alloy_mesh", new ItemStack(ModItems.mesh, 1, 2), "TST", "STS", "TST",
-                    'T', new UnificationEntry(OrePrefix.stick, Materials.TinAlloy),
+            ModHandler.addShapedRecipe("bronze_mesh", new ItemStack(ModItems.mesh, 1, 2), "TST", "STS", "TST",
+                    'T', new UnificationEntry(OrePrefix.stick, Materials.Bronze),
                     'S', new ItemStack(Items.STRING)
             );
             ModHandler.removeRecipeByName("exnihilocreatio:item_mesh_3");

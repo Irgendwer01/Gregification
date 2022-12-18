@@ -146,9 +146,6 @@ public class SieveDrops implements ISieveDefaultRegistryProvider {
                 registry.register("dirt", new ItemInfo(seed), 0.05f, BlockSieve.MeshType.STRING.getID());
             }
             registry.register("dirt", new ItemInfo(ModItems.rubberSeed), 0.05f, BlockSieve.MeshType.STRING.getID());
-            registry.register("dust", new ItemInfo(Items.DYE, 15), 0.1f, BlockSieve.MeshType.STRING.getID());
-            registry.register("dust", new ItemInfo(Items.GLOWSTONE_DUST), 0.025f, BlockSieve.MeshType.IRON.getID());
-            registry.register("dust", new ItemInfo(Items.BLAZE_POWDER), 0.037f, BlockSieve.MeshType.IRON.getID());
         }
 
         for (Map.Entry<SieveDropType, List<SieveDrop>> drops : SIEVE_DROPS_MAP.entrySet()) {

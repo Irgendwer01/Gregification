@@ -138,10 +138,10 @@ public class SieveDrops implements ISieveDefaultRegistryProvider {
             registry.register("dirt", new ItemInfo(Items.PUMPKIN_SEEDS), 0.35f, BlockSieve.MeshType.STRING.getID());
             registry.register("dirt", new ItemInfo(ModItems.resources, 3), 0.05f, BlockSieve.MeshType.STRING.getID());
             registry.register("dirt", new ItemInfo(ModItems.resources, 4), 0.05f, BlockSieve.MeshType.STRING.getID());
-            registry.register("dirt", new ItemInfo(gtPebble.setMaxDamage(0).getDefaultInstance()), 0.5f, BlockSieve.MeshType.STRING.getID());
-            registry.register("dirt", new ItemInfo(gtPebble.setMaxDamage(1).getDefaultInstance()), 0.5f, BlockSieve.MeshType.STRING.getID());
-            registry.register("dirt", new ItemInfo(gtPebble.setMaxDamage(2).getDefaultInstance()), 0.5f, BlockSieve.MeshType.STRING.getID());
-            registry.register("dirt", new ItemInfo(gtPebble.setMaxDamage(3).getDefaultInstance()), 0.5f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(gtPebble, 0), 0.5f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(gtPebble, 1), 0.5f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(gtPebble, 2), 0.5f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(gtPebble, 3), 0.5f, BlockSieve.MeshType.STRING.getID());
             for (ItemSeedBase seed : ModItems.itemSeeds) {
                 registry.register("dirt", new ItemInfo(seed), 0.05f, BlockSieve.MeshType.STRING.getID());
             }

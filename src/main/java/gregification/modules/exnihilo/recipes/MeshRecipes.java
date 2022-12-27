@@ -7,10 +7,13 @@ import gregtech.api.recipes.ModHandler;
 import gregtech.api.unification.material.Materials;
 import gregtech.api.unification.ore.OrePrefix;
 import gregtech.api.unification.stack.UnificationEntry;
+import gregtech.common.blocks.BlockStoneSmooth;
+import gregtech.common.blocks.MetaBlocks;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
+import static gregification.modules.exnihilo.ExNihiloModule.gtPebble;
 import static gregtech.api.recipes.RecipeMaps.FORGE_HAMMER_RECIPES;
 
 public class MeshRecipes {
@@ -69,5 +72,10 @@ public class MeshRecipes {
                 .input(Blocks.END_STONE)
                 .output(ModBlocks.endstoneCrushed)
                 .buildAndRegister();
+
+        ModHandler.addMirroredShapedRecipe("basalt", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.BASALT, 1), "pp#", "pp#", "###", 'p', new ItemStack(gtPebble, 1, 0), new ItemStack(gtPebble, 1, 0), new ItemStack(gtPebble, 1, 0), new ItemStack(gtPebble, 1, 0));
+        ModHandler.addMirroredShapedRecipe("red_granite", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.RED_GRANITE, 1), "pp#", "pp#", "###", 'p', new ItemStack(gtPebble, 1, 3), new ItemStack(gtPebble, 1, 3), new ItemStack(gtPebble, 1, 3), new ItemStack(gtPebble, 1, 3));
+        ModHandler.addMirroredShapedRecipe("marble", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.MARBLE, 1), "pp#", "pp#", "###", 'p', new ItemStack(gtPebble, 1, 2), new ItemStack(gtPebble, 1, 2), new ItemStack(gtPebble, 1, 2), new ItemStack(gtPebble, 1, 2));
+        ModHandler.addMirroredShapedRecipe("black_granite", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.BLACK_GRANITE, 1), "pp#", "pp#", "###", 'p', new ItemStack(gtPebble, 1, 1), new ItemStack(gtPebble, 1, 1), new ItemStack(gtPebble, 1, 1), new ItemStack(gtPebble, 1, 1));
     }
 }

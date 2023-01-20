@@ -73,9 +73,9 @@ public class MeshRecipes {
                 .output(ModBlocks.endstoneCrushed)
                 .buildAndRegister();
 
-        ModHandler.addShapedRecipe("basalt", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.BASALT, 1), "pp ", "pp ", 'p', new ItemStack(gtPebble, 1, 0), '#');
-        ModHandler.addShapedRecipe("red_granite", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.RED_GRANITE, 1), "pp ", "pp ", 'p', new ItemStack(gtPebble, 1, 3), '#');
-        ModHandler.addShapedRecipe("marble", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.MARBLE, 1), "pp ", "pp ", 'p', new ItemStack(gtPebble, 1, 2), '#');
-        ModHandler.addShapedRecipe("black_granite", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.BLACK_GRANITE, 1), "pp ", "pp ", 'p', new ItemStack(gtPebble, 1, 1), '#');
+        ModHandler.addMirroredShapedRecipe("basalt", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.BASALT, 1), "PP", "PP", 'P', new ItemStack(gtPebble, 1, 0));
+        ModHandler.addMirroredShapedRecipe("red_granite", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.RED_GRANITE, 1), "PP", "PP", 'P', new ItemStack(gtPebble, 1, 3));
+        ModHandler.addMirroredShapedRecipe("marble", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.MARBLE, 1), "PP", "PP", 'P', new ItemStack(gtPebble, 1, 2));
+        ModHandler.addMirroredShapedRecipe("black_granite", MetaBlocks.STONE_SMOOTH.getItemVariant(BlockStoneSmooth.BlockType.BLACK_GRANITE, 1), "PP", "PP", 'P', new ItemStack(gtPebble, 1, 1));
     }
 }

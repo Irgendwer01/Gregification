@@ -131,6 +131,16 @@ public class SieveDrops implements ISieveDefaultRegistryProvider {
             registry.register("dirt", new ItemInfo(ModItems.pebbles, 2), 0.1f, BlockSieve.MeshType.STRING.getID());
             registry.register("dirt", new ItemInfo(ModItems.pebbles, 3), 0.5f, BlockSieve.MeshType.STRING.getID());
             registry.register("dirt", new ItemInfo(ModItems.pebbles, 3), 0.1f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(ExNihiloModule.gtPebble), 0.5f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(ExNihiloModule.gtPebble), 0.1f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(ExNihiloModule.gtPebble, 1), 0.5f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(ExNihiloModule.gtPebble, 1), 0.1f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(ExNihiloModule.gtPebble, 2), 0.5f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(ExNihiloModule.gtPebble, 2), 0.1f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(ExNihiloModule.gtPebble, 3), 0.5f, BlockSieve.MeshType.STRING.getID());
+            registry.register("dirt", new ItemInfo(ExNihiloModule.gtPebble, 3), 0.1f, BlockSieve.MeshType.STRING.getID());
+
+
             registry.register("dirt", new ItemInfo(Items.WHEAT_SEEDS), 0.7f, BlockSieve.MeshType.STRING.getID());
             registry.register("dirt", new ItemInfo(Items.MELON_SEEDS), 0.35f, BlockSieve.MeshType.STRING.getID());
             registry.register("dirt", new ItemInfo(Items.PUMPKIN_SEEDS), 0.35f, BlockSieve.MeshType.STRING.getID());
@@ -139,9 +149,6 @@ public class SieveDrops implements ISieveDefaultRegistryProvider {
             for (ItemSeedBase seed : ModItems.itemSeeds) {
                 registry.register("dirt", new ItemInfo(seed), 0.05f, BlockSieve.MeshType.STRING.getID());
             }
-            registry.register("dust", new ItemInfo(Items.DYE, 15), 0.1f, BlockSieve.MeshType.STRING.getID());
-            registry.register("dust", new ItemInfo(Items.GLOWSTONE_DUST), 0.025f, BlockSieve.MeshType.IRON.getID());
-            registry.register("dust", new ItemInfo(Items.BLAZE_POWDER), 0.037f, BlockSieve.MeshType.IRON.getID());
         }
 
         for (Map.Entry<SieveDropType, List<SieveDrop>> drops : SIEVE_DROPS_MAP.entrySet()) {

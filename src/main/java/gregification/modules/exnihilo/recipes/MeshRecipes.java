@@ -3,10 +3,15 @@ package gregification.modules.exnihilo.recipes;
 import exnihilocreatio.ModBlocks;
 import exnihilocreatio.ModItems;
 import gregification.modules.exnihilo.ExNihiloConfig;
+import gregification.modules.exnihilo.ExNihiloModule;
 import gregtech.api.recipes.ModHandler;
 import gregtech.api.unification.material.Materials;
 import gregtech.api.unification.ore.OrePrefix;
+import gregtech.api.unification.ore.StoneType;
+import gregtech.api.unification.ore.StoneTypes;
 import gregtech.api.unification.stack.UnificationEntry;
+import gregtech.common.blocks.MetaBlocks;
+import gregtech.common.blocks.StoneVariantBlock;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -18,8 +23,8 @@ public class MeshRecipes {
     public static void init() {
         if (ExNihiloConfig.harderMeshes) {
             ModHandler.removeRecipeByName("exnihilocreatio:item_mesh_2");
-            ModHandler.addShapedRecipe("tin_alloy_mesh", new ItemStack(ModItems.mesh, 1, 2), "TST", "STS", "TST",
-                    'T', new UnificationEntry(OrePrefix.stick, Materials.TinAlloy),
+            ModHandler.addShapedRecipe("bronze_mesh", new ItemStack(ModItems.mesh, 1, 2), "TST", "STS", "TST",
+                    'T', new UnificationEntry(OrePrefix.stick, Materials.Bronze),
                     'S', new ItemStack(Items.STRING)
             );
             ModHandler.removeRecipeByName("exnihilocreatio:item_mesh_3");
@@ -33,6 +38,10 @@ public class MeshRecipes {
                     'S', new ItemStack(Items.STRING)
             );
         }
+        ModHandler.addMirroredShapedRecipe("basalt", new ItemStack(StoneTypes.BASALT.stone.get().getBlock()), "PP", "PP", 'P', new ItemStack(ExNihiloModule.gtPebble, 1, 0));
+        ModHandler.addMirroredShapedRecipe("basalt", new ItemStack(StoneTypes.BLACK_GRANITE.stone.get().getBlock()), "PP", "PP", 'P', new ItemStack(ExNihiloModule.gtPebble, 1, 1));
+        ModHandler.addMirroredShapedRecipe("basalt", new ItemStack(StoneTypes.MARBLE.stone.get().getBlock()), "PP", "PP", 'P', new ItemStack(ExNihiloModule.gtPebble, 1, 2));
+        ModHandler.addMirroredShapedRecipe("basalt", new ItemStack(StoneTypes.RED_GRANITE.stone.get().getBlock()), "PP", "PP", 'P', new ItemStack(ExNihiloModule.gtPebble, 1, 3));
 
         FORGE_HAMMER_RECIPES.recipeBuilder()
                 .duration(10).EUt(16)

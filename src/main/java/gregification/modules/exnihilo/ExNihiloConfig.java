@@ -81,7 +81,7 @@ public class ExNihiloConfig {
                 "rock_salt", "0.0833", "1",
                 "lepidolite", "0.0357", "1",
                 "spodumene", "0.0238", "1",
-                "tin", "0.24225", "1",
+                "tin", "0.0869", "1",
                 "cassiterite", "0.08075", "1",
                 "basaltic_mineral_sand", "0.0546", "1",
                 "granitic_mineral_sand", "0.0546", "1",
@@ -183,7 +183,7 @@ public class ExNihiloConfig {
                 "quartzite", "0.09945", "1",
                 "barite", "0.05525", "1",
                 "certus_quartz", "0.0663", "1",
-                "tin", "0.24225", "1",
+                "tin", "0.0869", "1",
                 "cassiterite", "0.08075", "1",
 
                 "bornite", "0.0969", "2",
@@ -207,10 +207,10 @@ public class ExNihiloConfig {
                 "mica", "0.0546", "3",
                 "cassiterite", "0.0364", "3",
                 "pollucite", "0.0364", "3",
+                "graphite", "0.1014", "3",
+                "diamond", "0.0338", "3",
+                "coal", "0.0338", "3",
 
-                "graphite", "0.1014", "4",
-                "diamond", "0.0338", "4",
-                "coal", "0.0338", "4",
                 "soapstone", "0.056", "4",
                 "talc", "0.056", "4",
                 "pentlandite", "0.056", "4"
